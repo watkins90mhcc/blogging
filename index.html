@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=UTF8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=edge" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="content-style-type"  content="text/css" />
+		<meta http-equiv="googlebot" content="index, follow" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<title>The Coffee Blogger</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!--Bootstrap CSS File-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" 
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<!--Google Front File-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css/?family=Baloo+Chettan|Russo+One|Teko" />
+	</head>
+	<body>
+	    <div id="logo" class="text-center">
+			<img src="../images/coffeeblogger-logo.png" height="200px" />
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li	class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="blogs" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							Blogs
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="tandy.html">Tandy Color Computer</a>
+							<a class="dropdown-item" href="snes.html">Super Nintendo</a>
+							<a class="dropdown-item" href="genesis.html">Sega Genesis</a>
+						</div>  						
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="contact-form-modal">Contact</a>
+						
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-ledelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Contact The Coffee Blogger</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							  </div>
+							  <div class="modal-body">
+							        <form method="post" name="contactForm" action="../PHPMailer/mail.php">
+									<div class="form-group">
+										<label for="firstName" class="form-control-label">First Name:</label>
+										<input type="text" class="form-control" name="firstName" id="firstName" />
+									</div>
+									<div class="form-group">
+										<label for="lastName"  class="form-control-label">Last Name:</label>
+										<input type="text" class="form-control" name="lastName" id="lastName"  />
+									</div>
+									<div class="form-group">
+										<label for="email" class="form-control-label">Email:</label>
+										<input type="text" class="form-control" name="email" id="email" />
+									</div>
+									<div class="form-group">
+										<label for="subject" class="form-control-label">Subject:</label>
+										<select class="form-control" name="subject" id="subject">
+											<option>Choose a subject</option>
+											<option value="General">General</option>
+											<option value="Question">Question</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="message" class="form-control-label">Message:</label>
+										<textarea class="form-control" name="message" id="message"></textarea>
+									</div>
+									 <div class="modal-footer">
+								        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								        <button type="submit" value="submit" class="btn btn-primary">Send Message</button>
+							         </div>
+								</form>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="">
+			
+		</div>
+		<div class="container">
+		   <div class="row">
+				<div class="col">
+					<div class="card" style="width: 20rem;" >
+		              <div class="card-header" style="text-align: center;">Tandy Color Computer</div>
+		              <div id="carouselExampleSlidesOnly" class="carousel slide card-img-top" data-ride="carousel">
+			            <div class="carousel-inner">
+				           <div class="carousel-item active">
+					         <img class="d-block w-100" src="../images/tandy.png" alt="A titled close up of the Tandy Color Computer logo on the system" />
+					       <div class="carousel-caption d-none d-md-block">
+						     <h6 class="fixed-bottom">Photo From <a class="card-link" href="https://www.flickr.com/photos/moparx/3985430440" target="_blank">Flickr</a></h6>
+					       </div>
+			               </div>
+				           <div class="carousel-item">
+					         <img class="d-block w-100" src="../images/tandy-complete.png" alt="A Tandy Color Computer with joy sticks and a cassette adapter" />
+					         <div class="carousel-caption d-none d-md-block">
+						       <h6 class="fixed-bottom">Photo From <a class="card-link" href="https://parasomia.wordpress.com/2010/03/21/the-trs-80-color-computer-2-a-look-back/" target="_blank">WordPress.com</a></h6>
+					         </div>
+				           </div>
+				           <div class="carousel-item">
+					        <img class="d-block w-100" src="../images/megabug.png" alt="Mega Bug Tandy game pack" />
+				           </div>
+			             </div>
+		                </div>
+			            <div class="card-body">
+				        <p class="card-text">If asked to name the first computer I could remember using it would have to be the Tandy Color Computer. Though
+				         since I was very young I hanve only one or two memories at the most about it. The game as seen in the carousel is the one of the games 
+				         that I can remember sitting on the edege of my parents old water bed and playing, and hearing those infamous three words when one of 
+				         the bugs managed to find you "We Got Ya." Hearing the noise that accompanies the words scared me as a young child which is why this game
+				         is more rememberable than the other I have or may not played.</p>
+				        <p>To follow this story click <a class="card-link" href="tandy.html" target="_blank">here</a></p>
+		                </div>
+	                </div>
+				  </div>
+				  <div class="col">
+				    <div class="card" style="width: 20rem;">
+		               <div class="card-header" style="text-align: center;">Super Nintendo Entertainment System</div>
+						<div id="carouselExampleSlidesOnly" class="carousel slide card-img-top" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/snes.png" alt="The Super Nintendo Entertainment System" />
+								</div> 
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/supermario.png" alt="Box art for Super Mario World" />
+								</div> 
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/donkeykong.png" alt="Box art for Doney Kong Country" />
+								</div>
+							</div>
+						</div>
+					<div class="card-body">
+						<h6 class="card-subtitle mb-2 text-muted">SNES Photo has been modified</h6>
+						<p>If you were a young kid in the 90's no doubt you were in someway exposed to Nintendo's 16 bit console,
+				        simply called the Super Nintendo. A new console, a new controller, Mode 7, FX Chip, the ability
+						to play 32-bit gaming experience on 16-bit hardware, and more. This console also fought side-by-side against
+						Sega's 16-bit console the Sega Genesis in a battle of Supremacy for what came to be known as the Bit Wars. My 
+						experiences with this system came only with visits to my grandparent's house, because it would be quite a few
+						years before I would have a console of my own.</p>
+						<p>To follow this story click <a href="snes.html" target="_blank" class="card-link">here</a></p>
+						</div>
+					</div>
+				</div>
+				  <div class="col">
+						<div class="card" style="width: 20rem;">
+							<div class="card-header" style="text-align: center;">Sega Genesis</div>
+							<div id="carouselExampleSlidesOnly" class="carousel slide card-img-top" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100" src="../images/sega-genesis.png" alt="" />
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="../images/sonic-the-hedgehog.png" alt="" />
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100" src="../images/streets-of-rage.png" />
+									</div>
+								</div>
+						</div>
+						<div class="card-body">
+							<p>Released a year before the Super Nintendo Sega's new console brought people their first
+							16-bit experiences, and saw the birth of one of the world's most beloved characters next to 
+							Nintendo's Mario, Sonic the Hedgehog. Add ons like the 32X would mark Sega's attempt to bring
+							32-bit gaming experiences to their console, and the Sega CD would allow Genesis owner's to play
+							CD format games through their console. The ability to download games is something we take for 
+							granted now-a-days; however, many Genesis owners got to experience the first ever download and
+							play service called Sega Channel.</p>
+							<p>To follow This Story click <a href="genesis.html" target="_blank" class="card-link">here</a></p>
+						</div>
+						</div>
+				  </div>
+			 </div>
+		</div>
+		</br>
+		</br>
+		</br>
+		<!-- container two -->
+		<div class="container">
+			<div id="christmas-theme" class="text-center">
+				<img src="../images/christmas-theme.png" alt="" />
+			</div>
+			
+			<div class="card">
+				<h4 class="card-header">Featured Article</h4>
+				<div class="card-body">
+					<h4 class="card-title" style="text-align: center">The Reason for the Christmas Season</h4>
+					<p class="card-text">When we think of Christmas what probably comes to mind are Christmas
+					movies, visiting family, monotonous Christmas music played on the radio every year, shopping
+					for gifts, Christmas dinners, writting letters to Santa, etc. While in the western world where
+					consurmorism is the main focus, political correctness and groups like The Freedom From Religion
+					Foundation seek tirelessly to make the name of Jesus or anything that has to do with to true meaning 
+					of the Christmas dissapear. However, for Christians like me who are not ashamed to speak to truth
+					</p>
+				</div>
+			</div>
+		</div>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		</br>
+		
+		<nav class="fixed-bottom navbar-dark bg-dark">
+			<p style="color: #fff; text-align: center;">&copy; 2017 The Coffee Blogger All Rights Resevered</p>
+		</nav>
+		<!--Bootstrap Javascript Files-->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" 
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" 
+		integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		
+	</body>
+</html>
+
+ 
+
+
+
+
+
+
+
+
+
